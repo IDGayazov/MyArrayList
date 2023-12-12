@@ -1,12 +1,12 @@
 import java.util.Comparator;
 
 public class ArrayList<T> {
-
+    private static final int INITIAL_CAPACITY = 10;
     private int currSize;
     private int size;
     private T[] arr;
     public ArrayList() {
-        this(10);
+        this(INITIAL_CAPACITY);
     }
     public ArrayList(int size) {
         this.currSize = 0;
